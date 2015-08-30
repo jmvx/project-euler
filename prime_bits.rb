@@ -1,4 +1,4 @@
-def primebits(max)
+def prime_bits(max)
   oldvalue = 0
   Prime.each(max) do |p|
     newvalue = 1 << p

@@ -1,4 +1,4 @@
-def fact(int)
+def factorial(int)
   if int == 0
     return 1
   else

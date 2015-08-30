@@ -2,18 +2,18 @@
 
 import math
 
-def isprime(num):
-    max = int(math.sqrt(num))+1
-    for x in range(2,max):
-        if num%x == 0: return False
+def is_prime(num):
+    max = int(math.sqrt(num)) + 1
+    for x in range(2, max):
+        if num % x == 0: return False
     return True
 
-def primelist(num):
+def prime_list(num):
     primes = []
-    for x in range(2,num+1):
-        if isprime(x): primes.append(x)
+    for x in range(2, num + 1):
+        if is_prime(x): primes.append(x)
     return primes
 
-for x in range(1,100):
-    if isprime(x) == True:
+for x in range(1, 100):
+    if is_prime(x) == True:
         print x

@@ -1,4 +1,4 @@
-def factor(num)
+def proper_divisors(num)
   factors = Array.new
   (1..Math.sqrt(num)).each do |y| 
     if num % y == 0 then
